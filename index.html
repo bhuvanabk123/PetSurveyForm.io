@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pet Health Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Pet Meet-up Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name " required /></label>
+        <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email " required /></label>
+        <label id="number-label">Your Pet's Age:<input type="number" id="number" min="1" max="25" placeholder="Enter your pet's age" required /></label>
+<label class="gap">Which option best describes your pet's mood? <select id="dropdown">
+  <option>Select an option</option>
+  <option>Playful,Frisky</option>
+  <option>Relaxed</option>
+  <option>Dominant and Aggressive</option>
+  <option>Fearful</option>
+  <option>Other</option>
+  </select></label>
+  <label>Are you interested in attending a pet meet-up?</label>
+  <label><input type="radio" name="selector" class="inline" value="0"> Definetely</label >
+  <label><input type="radio" name="selector" class="inline" value="1"> Maybe</label>
+  <label><input type="radio" name="selector" class="inline" value="2"> Not sure</label>
+  <label class="gap">What is your pet's favourite treat? <select id="dropdown">
+  <option>Select an option</option>
+  <option>Crunchy Treats</option>
+  <option>Soft Treats</option>
+  <option>Dental Chews or Bone-like</option>
+  <option>All of the above</option>
+  <option>Other</option>
+  </select></label>
+ <label class="gap"> Is your pet house-trained and Well behaved? (Check all that apply)</label>
+ <label><input type="checkbox" class="inline" value="01" >Yes!</label>
+ <label><input type="checkbox" class="inline" value="00">Going through obedience training</label>
+ <label class="gap">Any suggestions for the pet-party theme? 
+   <textarea row="3" cols="30" placeholder="Enter your comments here...."></textarea>
+ </label> 
+ <input type="submit" value="Submit" id="submit"/>
+        </fieldset>
+      </body>
+      </html>
